@@ -1,0 +1,136 @@
+html, body {
+    font-size: 16px;
+    font-family: Outfit, sans-serif;
+    color: #665e5b;
+    background-color:#f3e5d8;
+    
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+
+  .recipe-image {
+    width: 100%;
+    border-radius: 10px;
+}
+  .container {
+    max-width: 700px;
+    margin: 10vh auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    
+    }
+ 
+
+  h1 {
+    font-family: 'Young Serif', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #312f2d;
+  }
+  h2 {
+    font-family: 'Young Serif', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #8a574c;
+    padding: 10px;
+  }
+
+  h3 {
+    font-family: 'Outfit', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .prep-time {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: hsl(330, 100%, 98%);
+    line-height: 2;
+    
+  }
+  
+  h3.prep-time {
+    color: hsl(332, 51%, 32%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    font-family: 'Young Serif', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+
+  p.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Outfit', sans-serif;
+    margin: 10px 0;
+  }
+
+  .divider {
+    height: 0.5px;
+    background-color: #dac2be;
+    margin: 20px 0;
+  }
+
+ul, ol {
+  list-style-position: inside;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+ul li::marker {
+  color: hsl(332, 51%, 32%); /* Change bullet points color */
+  font-size: 1.2em;
+  padding-right: 20px;
+}
+
+ol li::marker {
+  color: #8a574c; /* Change number color */
+  font-weight: bold;    
+  padding-right: 20px;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  color: #8a574c;
+}
+
+.nutrition table td {
+  line-height: 2;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nutrition table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0;  
+    margin: 0;
+  }
+  .recipe-image {
+    width: 100%;
+    border-radius: 0;
+    
+  }
+  .recipe-card {
+    margin: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
